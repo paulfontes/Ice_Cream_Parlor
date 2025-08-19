@@ -20,7 +20,7 @@
                 <img src="https://images.unsplash.com/photo-1516749622035-ab9e45262e0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a picture of sprinkles">
                 <div class="card-body">
                     <h6>Sprinkles $2</h6>
-                    <button onclick="orderSprinkles()" class="btn btn-primary">Add</button>
+                    <button onclick="buyFlavorUsingName('Sprinkles')" class="btn btn-primary">Add</button>
                 </div>
             </div>
             <div class="col-5">
@@ -28,7 +28,7 @@
                     <img class="card-image-top" src="https://plus.unsplash.com/premium_photo-1726072358526-542e07d58e36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a picture of chocolate chips">
                     <div class="card-body">
                         <h6>Chocolate Chips $3</h6>
-                        <button onclick="orderChocolateChips()" class="btn btn-primary">Add</button>
+                        <button onclick="buyFlavorUsingName('Chocolate Chips')" class="btn btn-primary">Add</button>
                     </div>
                 </div>
             </div>
@@ -41,15 +41,32 @@
                 <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=708&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a picture of ice-cream">
                 <div class="card-body">
                     <h6>Vanilla $4</h6>
-                    <button onclick="orderVanilla()" class="btn btn-primary">Add</button>
+                    <button onclick= "buyFlavorUsingName('Vanilla')" class="btn btn-primary">Add</button>
                 </div>
             </div>
             <div class="col-5">
                 <div class="card">
-                    <img class="card-image-top" src="https://images.unsplash.com/photo-1618485476424-7dc9cd512c08?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a picture of chocolate chips">
+                    <img class="card-image-top" src="https://images.unsplash.com/photo-1618485476424-7dc9cd512c08?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a picture of strawberry ice cream">
                     <div class="card-body">
                         <h6>Strawberry $5</h6>
-                        <button onclick="orderStrawberry()" class="btn btn-primary">Add</button>
+                        <button onclick="buyFlavorUsingName('Strawberry')" class="btn btn-primary">Add</button>
+                        <button onclick="sellFlavorUsingName('Strawberry')" class="btn btn-primary">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row py-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2> <i class="mdi mdi-cart-heart"></i> Cart</h2>
+                        <hr>
+                        <div id="cart-quantity">
+
+                        </div>
+                        <div id="cart-total">
+
+                        </div>
                     </div>
                 </div>
             </div>
