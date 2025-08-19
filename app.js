@@ -38,6 +38,7 @@
 
 function buyFlavorUsingName(flavorName) {
     console.log('🛒🍨', flavorName)
+    flavorQuantityElement.innerHTML = ''
     //    START     CONTINUE WHILE       INCREMENT BY
     for (let i = 0; i < iceCream.length; i += 1){
 
@@ -50,8 +51,9 @@ function buyFlavorUsingName(flavorName) {
             
         }
         totalPrice()
-
-        // flavorQuantityElement.innerHTML = `<h5>x${currentFlavor.quanity}</h5>`
+        
+        if (currentFlavor.quantity > 0)
+        flavorQuantityElement.innerHTML += `<h5>${currentFlavor.name}x${currentFlavor.quantity}</h5>`
     }
 }
 
